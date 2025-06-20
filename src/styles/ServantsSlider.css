@@ -1,0 +1,28 @@
+.servantsSliderContainer {
+    width: 100%;
+}
+
+.servantsSliderContainer .slick-slider {
+    width: 100%;
+}
+
+.servantsSliderContainer .slick-slider button {
+    display: none;
+}
+
+.servantsSliderContainer .slick-slider .slick-list {
+    width: 100%;
+}
+
+@media screen and (min-width:392) {
+
+    .servantsSliderContainer .slick-slider .slick-list .slick-initialized .slick-track {
+
+        width: 4656px;
+        opacity: 1;
+        transform: translate3d(-1164px, 0px, 0px);
+        gap: 63px;
+        display: flex !important;
+
+    }
+}

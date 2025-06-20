@@ -1,0 +1,277 @@
+.footer-mainContainer {
+    background-color: var(--quarternery-main);
+    padding: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-mainContainer .christMgocsmLogoContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-mainContainer .christMgocsmLogoContainer img {
+    width: 130px;
+}
+
+.footerHeadingContainer {
+    color: var(--five-main);
+    padding-top: 2rem;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    font-family: Anton, sans-serif;
+    font-size: 80px;
+    line-height: 1.1em;
+}
+
+.footerWrapper .NavItems a span {
+
+    /* color: var(--five-main); */
+    color: var(--five-main);
+    letter-spacing: -.2px;
+    margin-bottom: 50px;
+    font-size: 21px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-mainContainer span {
+    color: var(--five-main);
+    letter-spacing: -.2px;
+    margin-bottom: 50px;
+    font-size: 21px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+.button-5 {
+    align-items: center;
+    /* background-clip: padding-box; */
+    background-color: #fa6400;
+    border: 1px solid transparent;
+    border-radius: 3.75rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 1rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+}
+
+.button-5:hover,
+.button-5:focus {
+    background-color: #fb8332;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+    transform: translateY(-1px);
+}
+
+.button-5:active {
+    background-color: #c85000;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
+
+.footerFinalBorderContainer {
+    margin-top: 2.5rem;
+    border-top: 1px solid var(--five-main);
+    display: flex;
+    position: relative;
+}
+
+
+.footerWrapper {
+    display: flex;
+    flex-direction: row;
+    grid-column-gap: 50px;
+    grid-row-gap: 0px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    padding-top: 2rem;
+    width: 100%;
+}
+
+.footerWrapper .NavItems {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.footerWrapper .NavItems a {
+    color: var(--five-main);
+    text-decoration: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: all .3s;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.footerWrapper .NavItems a span {
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Anton, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.1em;
+    transition: all ease 1.2s;
+
+}
+
+.footerWrapper .NavItems a span:hover {
+    color: var(--dark-main);
+}
+
+.socialMediaHandles {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: rgb(0, 0, 0); */
+    gap: 2rem;
+
+}
+
+.socialMediaHandles img {
+    object-fit: cover;
+    object-position: center;
+    width: 29px;
+    cursor: pointer;
+    transition: all ease 1.2s;
+}
+
+.socialMediaHandles img:hover {
+    transform: scale(1.1);
+    filter: contrast(200%);
+}
+
+
+.InstaLogo {
+    width: 80%;
+}
+
+
+@media screen and (max-width:801px) {
+    .footerWrapper {
+        flex-direction: column;
+    }
+
+    .footerWrapper .socialMediaHandles {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 0.9rem;
+        gap: 15px;
+    }
+
+}
+
+@media screen and (max-width:595px) {
+    .footerWrapper .NavItems a span {
+        font-size: 14.5px;
+    }
+}
+
+@media screen and (max-width:539px) {
+
+    .footerWrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footerWrapper .NavItems {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1px;
+
+    }
+
+    .footerWrapper .socialMediaHandles {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        /* flex-direction: c; */
+    }
+}
+
+@media screen and (max-width:432px) {
+    .footerHeadingContainer{
+        font-size: 65px;
+    }
+
+    .footer-mainContainer span{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:413px) {
+  
+    .footerWrapper .socialMediaHandles {
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+     
+    .socialMediaHandles img{
+        width: 20px;
+    }
+}
+
+@media screen and (max-width:381px) {
+    .footerWrapper .NavItems a span {
+        font-size: 10.5px;
+    }
+
+    .socialMediaHandles img{
+        width: 18px;
+    }
+}
+
+@media screen and (max-width:376px) {
+    .footerHeadingContainer{
+        font-size: 50px;
+    }
+
+    .footer-mainContainer span{
+        font-size: 15px;
+    }
+}
+
+
+@media screen and(max-width:611px) {
+    .footerWrapper .NavItems a span {
+        font-size: 11px;
+    }
+
+
+
+}

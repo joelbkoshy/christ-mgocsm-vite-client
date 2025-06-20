@@ -1,0 +1,303 @@
+.nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 999;
+    transition: transform 0.6s ease;
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.navBgColor {
+    background-color: var(--quarternery-main);
+}
+
+.nav-container.hide {
+    transform: translateY(-100%);
+}
+
+.nav-container>* {
+    flex: 1;
+}
+
+.nav-container .left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 25px;
+    z-index: 999;
+
+}
+
+.nav-container .left img.christ-logo {
+    width: 100px;
+    z-index: 999;
+}
+
+.nav-container .middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-container .middle ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 32px;
+    list-style-type: none;
+}
+
+.nav-container .middle ul li a {
+    position: relative;
+    color: var(--contrast-main);
+    /* or specify the default text color */
+    text-decoration: none;
+}
+
+.nav-container .middle ul li a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #fa6400;
+    transition: width 0.6s ease;
+    z-index: -1;
+}
+
+.nav-container .middle ul li a:hover::before {
+    width: 100%;
+}
+
+.nav-container .middle ul li a:hover {
+    color: var(--contrast-main);
+    text-decoration: none;
+}
+
+.nav-container .right {
+    display: flex;
+    align-items: center;
+    padding-right: 25px;
+    justify-content: flex-end;
+    gap: 32px;
+}
+
+
+.nav-container .right img {
+    display: none;
+}
+
+.nav-container .right .button-5 {
+    align-items: center;
+    /* background-clip: padding-box; */
+    background-color: #fa6400;
+    border: 1px solid transparent;
+    border-radius: 3.75rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 1rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+}
+
+.button-5:hover,
+.button-5:focus {
+    background-color: #fb8332;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+    transform: translateY(-1px);
+}
+
+.button-5:active {
+    background-color: #c85000;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
+
+.JoinNowButtonContainer {
+    padding-top: 2rem;
+}
+
+
+.nav-container .bigMenu {
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var( --quarternery-main);
+    width: 100vw;
+    opacity: 1;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 900;
+     */
+    display: none;
+}
+
+.nav-container .bigMenuActive {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--quarternery-main);
+    width: 100vw;
+    opacity: 1;
+    height: 100vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 900;
+    transition: all 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+    transition: all 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.nav-container .bigMenuActive .list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    transition: all 0.2s ease;
+    /* display: none; */
+    opacity: 1;
+    padding: 40px;
+}
+
+
+.nav-container .bigMenuActive .list a {
+    /* color: var(--five-main); */
+    text-decoration: none;
+    font-size: 45px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.nav-container .bigMenuActive .list a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 42px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-container .bigMenuActive .list a span {
+    transition: all 0.4s ease;
+    height: 10px;
+    aspect-ratio: 1/1;
+    background-color: #000000;
+    border-radius: 100%;
+    opacity: 0;
+    font-size: 30px;
+}
+
+
+
+/* @media screen and (min-width:1260px) {
+    .nav-container .middle ul li a{
+        font-size: 85%;
+    }
+} */
+
+@media screen and (min-width:1261px) {
+    .nav-container .bigMenuActive {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:1261px) {
+    .nav-container .middle ul li a {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width:1350px) {
+    .nav-container .middle ul li a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width:1505px) {
+    .nav-container .middle ul li a {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width:1508px) {
+    /* .nav-container .middle ul li a{
+        font-size: 100%;
+    } */
+}
+
+@media screen and (max-width:1261px) {
+
+    /* .nav-container .left {
+        display: none;
+    } */
+
+    .nav-container .middle {
+        display: none;
+    }
+
+    .nav-container .right a {
+        display: none;
+    }
+
+    .nav-container .right img {
+        display: block;
+        width: 40px;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+
+}
+
+
+@media screen and (max-width:650px) {
+    .nav-container .left img.christ-logo {
+        width: 80px;
+        z-index: 999;
+    }
+
+    .nav-container .right img {
+        display: block;
+        width: 35px;
+        cursor: pointer;
+        z-index: 999;
+    }
+}

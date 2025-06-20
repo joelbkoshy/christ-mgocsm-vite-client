@@ -1,0 +1,14 @@
+.testimonialsSlider-Container{
+    width: 100%;
+    height: 100%;
+}
+
+.testimonialsSlider-Container .slick-slider {
+    width: 100%;
+    height: 100%;
+}
+
+.testimonialsSlider-Container .slick-slider .slick-list{
+    width: 100%;
+    height: 100%;
+}

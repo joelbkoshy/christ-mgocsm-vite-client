@@ -1,0 +1,114 @@
+.aboutUsContainer {
+    padding-top: 10rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: Inter, san-serif;
+}
+
+.aboutUsContainer .imageContainer {
+    width: 100%;
+    height: min-content;
+    overflow: hidden;
+    /* background-image: url('/public/assets/about-us/bava.jpg'); */
+    background-size: contain;
+    position: relative;
+}
+
+
+.aboutUsContainer .imageContainer img {
+    object-fit: cover;
+    width: 100%;
+    height: fit-content;
+
+}
+
+.mgocsmContainer {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Anton, sans-serif;
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 1.1em;
+    transition: .3s;
+    color: var(--main-color);
+}
+
+.mgocsmContainer p {
+    color: var(--contrast-main);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 1.1px;
+
+}
+
+
+.aboutChristMgocsmContainer {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Anton, sans-serif;
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 1.1em;
+    transition: .3s;
+    color: var(--main-color);
+}
+
+.aboutChristMgocsmContainer p {
+    color: var(--contrast-main);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 1.1px;
+
+}
+
+
+@media screen and (max-width:910px) {
+    .aboutUsContainer{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media screen and (max-width:910px) {
+    .aboutUsContainer{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (max-width:432px) {
+    .aboutUsContainer .imageContainer {
+        height: 10rem;
+    }
+
+    .aboutUsContainer .imageContainer img {
+        height: 10rem;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .mgocsmContainer p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 1px;
+    }
+
+    .aboutChristMgocsmContainer p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 1px;
+    }
+}

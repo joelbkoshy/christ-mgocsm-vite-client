@@ -1,0 +1,563 @@
+.mainCard-container {
+    margin: 40px;
+    padding: 10px;
+    width: 95%;
+    background-color: var(--main-color);
+    height: 30rem;
+    border-radius: 3.4rem;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+
+.mainCard-container .mainCard-secondaryContainer {
+    width: 100%;
+    height: 100%;
+    border-radius: 3.4rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mainCard-container .mainCard-secondaryContainer .left {
+    margin-top: 4px;
+    height: 35rem;
+    width: 62%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow: hidden;
+    transform: translate(0%, -10%);
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+
+.mainCard-container .mainCard-secondaryContainer .left img {
+    animation: fadeIn 1.5s;
+}
+
+.mainCard-container .mainCard-secondaryContainer .bottom {
+    display: none;
+}
+
+.mainCard-container .mainCard-secondaryContainer .right {
+    width: 38%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem;
+    color: var(--bg-color);
+    font-family: "Anton";
+}
+
+
+.mainCard-container .mainCard-secondaryContainer .right .mainHeading {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainCard-container .mainCard-secondaryContainer .right .mainHeading h1 {
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.1em;
+}
+
+.mainCard-container .mainCard-secondaryContainer .right .subHeading {
+    display: flex;
+    /* background-color: aquamarine; */
+    width: 100%;
+    padding-top: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mainCard-container .mainCard-secondaryContainer .right .subHeading p {
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.1em;
+}
+
+.mainCard-container .mainCard-secondaryContainer .left img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+.card {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card.active {
+    opacity: 1;
+    visibility: visible;
+    animation: fadeIn 0.5s;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s ease;
+    background-color: #000000;
+    opacity: 0;
+}
+
+@media screen and (max-width:1208px) {
+
+    .mainCard-container {
+        height: 45rem;
+        background: none;
+    }
+
+    .mainCard-container .mainCard-secondaryContainer .left {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .mainCard-container .mainCard-secondaryContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainCard-container .mainCard-secondaryContainer .right {
+        display: none;
+    }
+
+    .mainCard-container .mainCard-secondaryContainer .bottom {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        z-index: -1;
+        justify-content: center;
+        background-color: var(--main-color);
+        width: 97%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.5rem;
+        color: var(--bg-color);
+        font-family: "Anton";
+    }
+
+
+    .mainCard-container .mainCard-secondaryContainer .bottom .mainHeading {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mainCard-container .mainCard-secondaryContainer .bottom .mainHeading h1 {
+        letter-spacing: 1px;
+        /* font-size: 40px; */
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 1.1em;
+    }
+
+    .mainCard-container .mainCard-secondaryContainer .bottom .subHeading {
+        display: flex;
+        /* background-color: aquamarine; */
+        width: 100%;
+        padding-top: 5%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mainCard-container .mainCard-secondaryContainer .bottom .subHeading p {
+        letter-spacing: 1px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.1em;
+    }
+
+}
+
+
+@media screen and (max-width:943px) {
+
+    .mainCard-container {
+        height: 45rem;
+        background: none;
+    }
+
+    /* .mainCard-container .mainCard-secondaryContainer {
+        height: min-content;
+    } */
+
+    .mainCard-container .mainCard-secondaryContainer .left {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 850px;
+    }
+
+    .mainCard-container .mainCard-secondaryContainer .bottom {
+        width: 89%;
+    }
+}
+
+@media screen and (max-width:911px) {
+    .mainCard-container .mainCard-secondaryContainer .left {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 820px;
+    }
+
+}
+
+
+
+@media screen and (max-width:875px) {
+
+    .mainCard-container .mainCard-secondaryContainer .left {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 790px;
+    }
+}
+
+
+@media screen and (max-width:847px) {
+    .mainCard-container .mainCard-secondaryContainer .left {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 750px;
+    }
+
+
+    .mainCard-container .mainCard-secondaryContainer .bottom {
+        width: 83%;
+    }
+}
+
+@media screen and (max-width:804px) {
+
+    .mainCard-container .mainCard-secondaryContainer .left {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 730px;
+    }
+}
+
+@media screen and (max-width:795px) {
+
+
+
+    .mainCard-container .mainCard-secondaryContainer .left {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 690px;
+        height: 400px;
+    }
+
+
+    .mainCard-container .mainCard-secondaryContainer .bottom {
+        width: 80%;
+        position: absolute;
+        bottom: 8.6rem;
+    }
+}
+
+@media screen and (max-width:747px) {
+    .mainCard-container .mainCard-secondaryContainer .left {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 650px;
+        height: 405px;
+    }
+}
+
+@media screen and (max-width:714px) {
+
+
+
+    .mainCard-container .mainCard-secondaryContainer .left {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 620px;
+        height: 390px;
+    }
+
+    .mainCard-container .mainCard-secondaryContainer .bottom {
+        width: 83%;
+        bottom: 8.8rem;
+    }
+}
+
+@media screen and (max-width:678px) {
+    .mainCard-container .mainCard-secondaryContainer .left {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 580px;
+        height: 360px;
+    }
+
+
+
+    .mainCard-container .mainCard-secondaryContainer .bottom {
+        width: 81%;
+        bottom: 10.7rem;
+    }
+
+    .mainCard-container .mainCard-secondaryContainer .bottom .mainHeading h1 {
+        font-size: 25px;
+    }
+
+    .mainCard-container .mainCard-secondaryContainer .bottom .subHeading p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:637px) {
+
+    .mainCard-container .mainCard-secondaryContainer .left {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 550px;
+        height: 330px;
+    }
+
+    .mainCard-container .mainCard-secondaryContainer .bottom {
+        width: 80%;
+        bottom: 12.3rem;
+    }
+}
+
+@media screen and (max-width:604px) {
+    .mainCard-container .mainCard-secondaryContainer .left {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 525px;
+        height: 320px;
+    }
+
+    .mainCard-container .mainCard-secondaryContainer .bottom {
+        width: 83%;
+        bottom: 14rem;
+    }
+}
+
+@media screen and (max-width:573px) {
+    .mainCard-container .mainCard-secondaryContainer .left {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 500px;
+        height: 310px;
+    }
+
+    .mainCard-container .mainCard-secondaryContainer .bottom {
+        width: 83%;
+        bottom: 14.5rem;
+    }
+    .mainCard-container .mainCard-secondaryContainer .bottom .mainHeading h1 {
+        font-size: 20px;
+    }
+
+    .mainCard-container .mainCard-secondaryContainer .bottom .subHeading p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:555px) {
+    .mainCard-container .mainCard-secondaryContainer .left {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 475px;
+        height: 300px;
+    }
+
+    .mainCard-container .mainCard-secondaryContainer .bottom {
+        width: 78%;
+        bottom: 13.7rem;
+    }
+}
+
+@media screen and (max-width:529px) {
+    .mainCard-container .mainCard-secondaryContainer .left {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 450px;
+        height: 290px;
+    }
+
+    .mainCard-container .mainCard-secondaryContainer .bottom {
+        width: 78%;
+        bottom: 16rem;
+    }
+}
+
+@media screen and (max-width:505px) {
+    .mainCard-container .mainCard-secondaryContainer .left {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 425px;
+        height: 280px;
+    }
+
+
+    .mainCard-container .mainCard-secondaryContainer .bottom {
+        width: 77%;
+        bottom: 17rem;
+    }
+}
+
+@media screen and (max-width:475px) {
+    .mainCard-container .mainCard-secondaryContainer .left {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 400px;
+        height: 275px;
+    }
+
+    .mainCard-container .mainCard-secondaryContainer .bottom {
+        width: 78%;
+        bottom: 16.5rem;
+    }
+}
+
+@media screen and (max-width:447px) {
+
+    .mainCard-container .mainCard-secondaryContainer .left {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 375px;
+    }
+
+    .mainCard-container .mainCard-secondaryContainer .bottom {
+        width: 78%;
+        bottom: 17.5rem;
+    }
+}
+
+@media screen and (max-width:423px) {
+    .mainCard-container .mainCard-secondaryContainer .left {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 360px;
+    }
+    .mainCard-container .mainCard-secondaryContainer .bottom {
+        width: 78%;
+        bottom: 17rem;
+    }
+}
+
+@media screen and (max-width:412px) {
+    .mainCard-container .mainCard-secondaryContainer .left {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 350px;
+    }
+    .mainCard-container .mainCard-secondaryContainer .bottom {
+        width: 78%;
+        bottom: 17rem;
+    }
+}
+
+@media screen and (max-width:404px) {
+    .mainCard-container .mainCard-secondaryContainer .left {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 340px;
+    }
+
+    .mainCard-container .mainCard-secondaryContainer .bottom {
+        width: 78%;
+        bottom: 17rem;
+    }
+
+    .mainCard-container {
+        margin: 30px;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .mainCard-container .mainCard-secondaryContainer .left {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 330px;
+        /* height: 20px; */
+        /* height: 200px; */
+    }
+    .mainCard-container .mainCard-secondaryContainer .bottom {
+        width: 78%;
+        bottom: 17rem;
+    }
+}
+
+@media screen and (max-width:381px) {
+    .mainCard-container .mainCard-secondaryContainer .left {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 310px;
+    }
+    .mainCard-container .mainCard-secondaryContainer .bottom {
+        width: 78%;
+        bottom: 17rem;
+    }
+}
+
+@media screen and (max-width:345px) {
+    .mainCard-container .mainCard-secondaryContainer .left {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 290px;
+    }
+    .mainCard-container .mainCard-secondaryContainer .bottom {
+        width: 78%;
+        bottom: 17rem;
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,31 @@
+.left-arrow-testimonial {
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--bg-color);
+    background-color: var(--bg-color);
+    background-image: url('/src//assets/arrows/leftArrow_hover.png');
+
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .3s;
+    display: flex;
+    position: absolute;
+    bottom: -67px;
+    left: 40%;
+    /* right:0 */
+}
+
+.left-arrow-testimonial:hover {
+    background-image: url('/src/assets/arrows/leftArrow.png');
+    background-color: transparent;
+}
+
+@media screen and (max-width:1440px) {
+    .left-arrow-testimonial {
+        bottom: -75px;
+        left: 0;
+    }
+}

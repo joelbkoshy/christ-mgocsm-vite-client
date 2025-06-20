@@ -1,0 +1,267 @@
+.home-container {
+    position: relative;
+    min-height: 100vh;
+    margin-top: 250px;
+}
+
+.home-container .motto-container {
+    margin-top: 130px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--ternery-main);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem 0;
+    /* padding-top: 10rem; */
+}
+
+.home-container .motto-container h3 {
+    font-size: 45px;
+    font-style: normal;
+    color: var(--bg-color);
+    font-weight: bolder;
+}
+
+.home-container .motto-container .motto-cards {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+}
+
+@media screen and (min-width:1230px) {
+    .home-container .motto-container {
+        padding: 3rem   ;
+    }
+}
+
+/*===============MOTTO CARD STYLES END===============*/
+
+/*===============LATEST EVENTS STYLES START===============*/
+
+.home-container .latestEvents-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding-top: 10rem;
+    padding-left: 10rem;
+    padding-bottom: 10rem;
+    background-color: var(--quarternery-main);
+    overflow: hidden;
+}
+
+.home-container .latestEvents-container .textContainer {
+    width: 30%;
+    height: 100%;
+}
+
+.home-container .latestEvents-container .textContainer h1 {
+    /* color: var(--five-main); */
+    color: var(--contrast-main);
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-family: Anton, sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.1em;
+}
+
+.home-container .latestEvents-container .textContainer span p {
+    /* color: var(--five-main); */
+    color: var(--contrast-main);
+    letter-spacing: -.36px;
+    -webkit-text-stroke-color: var(--text-dark);
+    text-transform: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.home-container .latestEvents-container .carouselContainer {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+
+
+@media screen and (max-width:1260px) {
+    .home-container .latestEvents-container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding:50px;
+        padding-bottom: 100px;
+    }
+
+    .home-container .latestEvents-container .textContainer{
+        width: 100%;
+    }
+
+    .home-container .latestEvents-container .carouselContainer{
+        padding-top:2rem ;
+    }
+}
+
+/*===============LATEST EVENTS STYLES END===============*/
+
+/*===============THIRUMENIS PHOTO CONTAINER START===============*/
+
+.home-container .thirumenis-Container {
+    bottom: -97%;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    /* padding-left: 9rem; */
+    /* padding-right: 9rem; */
+    padding: 0 50px;
+    padding-top: 7rem;
+    padding-bottom: 10rem;
+    background-color: var(--ternery-main);
+}
+
+.home-container .thirumenis-Container .main-thirumenisContainer {
+    background-color: var(--light-main);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+}
+
+.home-container .thirumenis-Container .main-thirumenisContainer .patronContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container .thirumenis-Container .main-thirumenisContainer .bishopsContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 5rem;
+    gap: 50px
+}
+
+.home-container .thirumenis-Container .main-thirumenisContainer .achansContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 5rem;
+    gap: 50px
+}
+
+@media screen and (max-width:633px) {
+    .home-container .thirumenis-Container .main-thirumenisContainer {
+        background-color: transparent;
+    }
+}
+
+@media screen and (max-width:1269px) {
+    .home-container .thirumenis-Container .main-thirumenisContainer .bishopsContainer{
+        flex-direction: column;
+    }
+
+    .home-container .thirumenis-Container{
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+    }
+
+}
+
+@media screen and (max-width:633px) {
+    .home-container .thirumenis-Container .main-thirumenisContainer .achansContainer{
+        flex-direction: column;
+    }
+}
+
+/*===============THIRUMENIS PHOTO CONTAINER END===============*/
+
+/*===============SERVANTS PHOTO CONTAINER START===============*/
+
+.home-container .servants-Container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-main);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container .servants-Container .headingsContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.home-container .servants-Container .headingsContainer h3 {
+    color: var(--contrast-main);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-family: "Anton", sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1.1em;
+}
+
+.home-container .servants-Container .servantsCarouselContainer {
+    padding-top: 3.5rem;
+    gap: 25px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+
+.home-container .testimonialsHomeContainer {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width:450px) {
+    .home-container .servants-Container .headingsContainer h3{
+        font-size: 35px;
+    }
+}
