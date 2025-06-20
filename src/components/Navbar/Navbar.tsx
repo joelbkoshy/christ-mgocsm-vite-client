@@ -71,7 +71,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="right">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScB53c0ROuqAI0WJ_44dXkzJkce-XsSdxJv7MMwi0vGNfGumQ/viewform"><button className='button-5'>Join Now</button></a>
+                <a href="https://docs.google.com/forms/d/1hbmOX9v2W8FV9nXLmNHOdmqw4BB804oKwYOEEsNxO9g/edit"><button className='button-5'>Join Now</button></a>
                 {
                     menuActive ?
                         <img src={close} alt="" onClick={() => setMenuActive(false)} />
@@ -87,7 +87,7 @@ const Navbar = () => {
                     <a className="bigAnim" href="/about-us" >About Us <span /></a>
                     {/* <a className="bigAnim" href="#val" onClick={() => { }}>Gallery <span /></a> */}
                     <a className="bigAnim" href="/contact" >Contact <span /></a>
-                    <a className="bigAnim" href="https://docs.google.com/forms/d/e/1FAIpQLScB53c0ROuqAI0WJ_44dXkzJkce-XsSdxJv7MMwi0vGNfGumQ/viewform">Join Now <span /></a>
+                    <a className="bigAnim" href="https://docs.google.com/forms/d/1hbmOX9v2W8FV9nXLmNHOdmqw4BB804oKwYOEEsNxO9g/edit">Join Now <span /></a>
                 </div>
             </div>
 
