@@ -1,4 +1,3 @@
-import React from 'react'
 import '../../styles/RightArrowTestimonial.css'
 
 const RightArrowTestimonial = (props: any) => {

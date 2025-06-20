@@ -1,6 +1,4 @@
-import React from 'react'
 import '../../styles/GlassCard.css'
-import test from '../../assets/test.jpg'
 
 type card_data = {
     img_src: string,

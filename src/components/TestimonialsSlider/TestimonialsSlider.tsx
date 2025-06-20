@@ -1,4 +1,3 @@
-import React from 'react'
 import Slider from 'react-slick';
 import Testimonials from '../Testimonials/Testimonials';
 import '../../styles/TestimonialsSlider.css'

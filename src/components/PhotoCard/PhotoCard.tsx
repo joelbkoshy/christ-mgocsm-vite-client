@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect } from 'react'
 import '../../styles/PhotoCard.css'
 
 
@@ -10,7 +10,6 @@ const PhotoCard = (props: any) => {
 
     tempStyle = style
 
-    const [currentStyle, setCurrentStyle] = useState<any>()
 
 
     useEffect(() => {

@@ -1,4 +1,3 @@
-import React from 'react'
 import '../../styles/Footer.css'
 import Logo from '../../assets/logos/christMgocsm-trans.png'
 import Insta from '../../assets/logos/instagram.png'

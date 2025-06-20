@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import { useEffect } from 'react'
 import Navbar from '../components/Navbar/Navbar'
 import '../styles/Enchristo.css'
 import enchristo from '../assets/enchristo/enchristo.jpg'
@@ -9,14 +9,12 @@ import '../styles/Home.css'
 import achensImg from '../assets/enchristo/sajiachenPreach.png'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Lenis from '@studio-freight/lenis'
 
 
 
 const Enchristo = () => {
 
     //Refs
-    const imgAnim = useRef(null);
 
     //Register Scroll Trigger
     gsap.registerPlugin(ScrollTrigger);

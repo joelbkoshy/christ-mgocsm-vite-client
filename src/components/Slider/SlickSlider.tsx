@@ -1,4 +1,3 @@
-import React from 'react'
 import Slider from "react-slick";
 import CarouselCard from '../CarouselCard/CarouselCard';
 import '../../styles/SlickSlider.css'
