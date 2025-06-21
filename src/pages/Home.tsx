@@ -173,7 +173,7 @@ const Home = () => {
     name: "Benita Susan Jose",
       position: "Treasurer-(Female)",
    class: "B.Com IAF",
-    year:"2nd Year"
+    year:"3rd Year"
 
   }, {
     img_src: "assets/servants/allen-shiji.jpg",
