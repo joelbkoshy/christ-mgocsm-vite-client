@@ -177,7 +177,7 @@ const Servants = () => {
 
         {/* Add/Edit Modal */}
         <Dialog open={modalOpen} onClose={() => setModalOpen(false)} maxWidth="sm" fullWidth>
-          <Box sx={{ bgcolor: '#fef7ef',borderRadius: '20px', p: 2 }}>
+          <Box sx={{ bgcolor: '#fef7ef',borderRadius: '20px'}}>
             <DialogTitle sx={{ color: 'var(--main-color)', fontSize: '24px' }}>
               {isEdit ? 'Edit Servant' : 'Add Servant'}
             </DialogTitle>
@@ -232,7 +232,7 @@ const Servants = () => {
 
         {/* Delete Modal */}
         <Dialog open={deleteModalOpen} onClose={() => setDeleteModalOpen(false)}>
-          <Box sx={{ bgcolor: '#fef7ef',  borderRadius: '20px', p: 2 }}>
+          <Box sx={{ bgcolor: '#fef7ef',  borderRadius: '20px' }}>
             <DialogTitle sx={{ color: 'var(--main-color)' }}>Confirm Delete</DialogTitle>
             <DialogContent>
               <Typography sx={{ color: 'var(--text-light)' }}>
