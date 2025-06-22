@@ -1,3 +1,4 @@
+import React from 'react'
 import Slider from 'react-slick'
 import ServantsCard from '../ServantsCard/ServantsCard';
 import '../../styles/ServantsSlider.css'
@@ -10,9 +11,9 @@ const ServantsSlider = ({ data }: any) => {
     slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 5000,
+    speed: 3000,
     autoplaySpeed: 0,
-    cssEase: "linear",
+    cssEase: 	'ease-out',
     pauseOnHover: false,
     prevArrow: <></>,
     nextArrow: <></>,
