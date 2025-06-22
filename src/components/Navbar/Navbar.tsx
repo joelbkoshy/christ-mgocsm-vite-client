@@ -68,6 +68,7 @@ const Navbar = () => {
                     <li onClick={scrollTop}><Link className='mid-text-font fw-bold' to={"/about-us"}>About Us</Link></li>
                     {/* <li onClick={scrollTop}><Link className='mid-text-font fw-bold' to={"/gallery"}>Gallery</Link></li> */}
                     <li onClick={scrollTop}><Link className='mid-text-font fw-bold' to={"/contact"}>Contact</Link></li>
+                    <li onClick={scrollTop}><Link className='mid-text-font fw-bold' to={"/login"}>Login</Link></li>
                 </ul>
             </div>
             <div className="right">
@@ -87,6 +88,7 @@ const Navbar = () => {
                     <a className="bigAnim" href="/about-us" >About Us <span /></a>
                     {/* <a className="bigAnim" href="#val" onClick={() => { }}>Gallery <span /></a> */}
                     <a className="bigAnim" href="/contact" >Contact <span /></a>
+                    <a className="bigAnim" href="/login" >Login <span /></a>
                     <a className="bigAnim" href="https://docs.google.com/forms/d/1hbmOX9v2W8FV9nXLmNHOdmqw4BB804oKwYOEEsNxO9g/edit">Join Now <span /></a>
                 </div>
             </div>

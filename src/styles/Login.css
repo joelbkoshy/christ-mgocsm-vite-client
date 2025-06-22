@@ -1,0 +1,130 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 2rem;
+}
+
+.login-card {
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+  background: transparent;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.login-card::before,
+.login-card::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+  border-radius: 20px;
+}
+
+.login-card::before {
+  z-index: -1;
+  transform: translate(-2rem, -2rem);
+  border: 6px solid var(--main-color);
+}
+
+.login-card::after {
+  z-index: -2;
+  transform: translate(-1rem, -1rem);
+  background: var(--secondary-main);
+}
+
+.login-card:focus-within {
+  background: var(--secondary-main);
+}
+
+.login-card h2 {
+  color: var(--contrast-main);
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.field input {
+  padding: 0.75rem 1rem;
+  border: 4px solid var(--contrast-main);
+  border-radius: 12px;
+  background-color: var(--bg-color);
+  color: var(--contrast-main);
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.field input:focus {
+  border: 6px solid var(--main-color);
+  outline: none;
+}
+
+.field label {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.field input:focus + label {
+  opacity: 1;
+}
+
+.login-card button {
+  background-color: var(--main-color);
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.login-card button:hover {
+  background-color: var(--dark-main);
+}
+
+.login-error {
+  color: red;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.login-info {
+  font-size: 0.75rem;
+  text-align: center;
+  color: var(--contrast-main);
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .login-container {
+    padding-top: 6rem;
+  }
+
+  .login-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .login-card h2 {
+    font-size: 1.5rem;
+  }
+}

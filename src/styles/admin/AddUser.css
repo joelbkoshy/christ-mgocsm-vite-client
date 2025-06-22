@@ -1,0 +1,19 @@
+/* Container layout for the entire admin page */
+.admin-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+/* Main content area beside the sidebar */
+.admin-content {
+  flex: 1;
+  padding: 1rem;
+  margin-left: 220px; /* default sidebar width */
+  transition: margin-left 0.3s ease;
+}
+
+/* Adjust content margin when sidebar is collapsed */
+.admin-sidebar.collapsed ~ .admin-content {
+  margin-left: 72px;
+}

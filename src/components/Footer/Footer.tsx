@@ -41,14 +41,14 @@ const Footer = () => {
               scrollTop()
               navigate("/about-us")
             }}><span>About Us</span></a>
-            {/* <a onClick={() => {
-              scrollTop()
-              navigate("/gallery")
-            }}><span>Gallery</span></a> */}
             <a onClick={() => {
               scrollTop()
               navigate("/contact")
             }}><span>Contact</span></a>
+              <a onClick={() => {
+              scrollTop()
+              navigate("/login")
+            }}><span>Login</span></a>
           </div>
           <div className='socialMediaHandles'>
             <a href="https://www.instagram.com/christmgocsm"><img src={Insta} alt="" className='InstaLogo' /></a>
